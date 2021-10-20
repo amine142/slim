@@ -44,7 +44,6 @@ phases:
      # - su mysql -s /bin/bash -c "/usr/sbin/mysqld" &
  build:
    commands: 
-     - cp ./app/config/parameters.yml.dist ./app/config/parameters.yml
      - composer install -o
      - composer update -o
 
